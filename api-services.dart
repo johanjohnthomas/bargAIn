@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 class ApiService {
   static const String BASE_URL = 'https://api.openai.com/v1/chat';
   static const String API_KEY =
-      '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';
+      'ENTER-API-KEY';
 
   static Future<Map<String, dynamic>> getModels() async {
     try {
@@ -25,7 +25,7 @@ class ApiService {
     String purpose =
         "You are now an AI chatbot for my AI Retail Company called bargAIn, you are called bargAIn buddy, you will only reply to the user only when the users query is related to retail/phones/tablets/accessories, You are not made by OpenAI, you are bargAInBuddy here is the users prompt: ";
     final String apiKey =
-        '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'; // Replace with your OpenAI API key
+        'ENTER-API-KEY'; // Replace with your OpenAI API key
 
     final Map<String, dynamic> requestData = {
       'model': 'text-davinci-003', // Replace with your desired model
